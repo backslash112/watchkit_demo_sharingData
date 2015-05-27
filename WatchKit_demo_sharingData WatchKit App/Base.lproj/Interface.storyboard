@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKit_demo_sharingData_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="124.5" alignment="center" text="Label" textAlignment="center" id="a69-Lf-SPI">
+                            <color key="textColor" red="0.2666666667" green="0.73976522870000005" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Load" id="pkN-Qz-TDP">
+                            <connections>
+                                <action selector="loadButtonClicked" destination="AgC-eL-Hgc" id="W29-az-14G"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myInterfaceLabel" destination="a69-Lf-SPI" id="THp-ue-Pqe"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

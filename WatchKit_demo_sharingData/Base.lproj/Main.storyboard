@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="WatchKit_demo_sharingData" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxZ-uK-Dcb">
+                                <rect key="frame" x="16" y="105" width="288" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbx-xI-9YM">
+                                <rect key="frame" x="143" y="226" width="34" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="v3i-9b-XzJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asZ-7J-Pzg">
+                                <rect key="frame" x="16" y="173" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-sH-qWS">
+                                <rect key="frame" x="143" y="431" width="35" height="30"/>
+                                <state key="normal" title="Load">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7oq-UO-bdW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaU-ew-Fc5">
+                                <rect key="frame" x="16" y="387" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.74117647060000003" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BxZ-uK-Dcb" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="3El-Lr-IOu"/>
+                            <constraint firstAttribute="centerX" secondItem="Cbx-xI-9YM" secondAttribute="centerX" id="FBW-M4-5qx"/>
+                            <constraint firstAttribute="centerY" secondItem="BxZ-uK-Dcb" secondAttribute="centerY" constant="163.25" id="Ntt-Xj-bfn"/>
+                            <constraint firstItem="asZ-7J-Pzg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="VmS-Kh-Foq"/>
+                            <constraint firstItem="BxZ-uK-Dcb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="g6n-bS-2Ri"/>
+                            <constraint firstItem="Cbx-xI-9YM" firstAttribute="top" secondItem="asZ-7J-Pzg" secondAttribute="bottom" constant="23" id="h0n-FU-LiH"/>
+                            <constraint firstItem="asZ-7J-Pzg" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="hR4-AH-K0Y"/>
+                            <constraint firstItem="asZ-7J-Pzg" firstAttribute="top" secondItem="BxZ-uK-Dcb" secondAttribute="bottom" constant="36" id="kvu-tZ-z7P"/>
+                            <constraint firstItem="XaU-ew-Fc5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nOY-Oa-HV1"/>
+                            <constraint firstItem="5fL-sH-qWS" firstAttribute="top" secondItem="XaU-ew-Fc5" secondAttribute="bottom" constant="23" id="osz-5V-5DC"/>
+                            <constraint firstAttribute="centerX" secondItem="5fL-sH-qWS" secondAttribute="centerX" constant="-0.5" id="qAo-o3-Yq9"/>
+                            <constraint firstItem="XaU-ew-Fc5" firstAttribute="top" secondItem="Cbx-xI-9YM" secondAttribute="bottom" constant="131" id="qp9-T4-g2g"/>
+                            <constraint firstItem="XaU-ew-Fc5" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="zVV-Am-Vf4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="BxZ-uK-Dcb" id="RCQ-Xb-W2u"/>
+                        <outlet property="myShowLoadedDataLabel" destination="XaU-ew-Fc5" id="hQY-4i-iu0"/>
+                        <outlet property="myTextField" destination="asZ-7J-Pzg" id="d4Q-4U-mbt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="278"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
